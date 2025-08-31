@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKSKY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <center>
+             <h1>BOOKSKY</h1>
+             <br>
+             <h3>Watch Your Favourite Book Summay</h3>
+        </center>
+
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>RICH DAD POOR DAD</h2>
+            <h5>Robin Sharma</h5>
+            <p>Robert's story of growing up with two dads his real father and the father of his best friend, his rich dad and the ways in which both men shaped his thoughts about money and investing.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+    </div>
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>ADD BOOK</h2>
+        <form>
+            <input type="text" placeholder="Enter the book Name" id="book-title-input">
+            <input type="text" placeholder="Enter the book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
